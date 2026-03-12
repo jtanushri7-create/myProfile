@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: #f5f8ff;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects {
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background: #2563eb;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.project-card a:hover{
+ background-color:white;
+ color:rgb(4, 4, 45);
+ border: 2px solid rgb(4, 4, 45);
+}

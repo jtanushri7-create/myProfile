@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+}
+
+.sidebar {
+    background-color:white;
+    width: 45vw;
+    height: 100vh;
+    padding-top: 10px;
+    
+}
+
+.sidebar nav {
+  
+    padding: 20px 20px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 23.5px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.Main {
+    /* background-color: yellow; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+   
+    margin-left: 12vw;
+
+
+    
+}
+
+ .container {
+    display: flex;
+    /* height: 100%; */
+
+    
+
+    
+    
+}
+.info{
+    /* background-color:palevioletred; */
+    height: 70vh;
+    width: 80vw;
+    margin: 27px  auto;
+    display: flex;
+    margin-left:70px ;
+    justify-content: space-around;
+     
+}
+
+.devinfo{
+display:flex;
+justify-content: center;
+flex-direction:  column;
+
+}
+
+
+.hello{
+font-size: 75px;
+font-family: "Inter", sans-serif;
+/* font-family: "Poppins", sans-serif; */
+  font-size: 48px;
+
+}
+
+.name{
+ font-size: 40px;
+ font-weight: bold;
+ display: flex;
+font-family: "Inter", sans-serif;
+display: inline-block;
+ font-weight: 600;
+
+
+}
+
+.about{
+ font-weight: 900;
+ margin: 8px;
+}
+.lerned{
+font-size: 14px;
+margin: 8px;
+
+}
+
+
+.button button{
+padding: 7px 11px;
+border-radius: 22px;
+color: white;
+background-color: dodgerblue;
+font-weight: bold;
+font-size: 13px;
+margin: 26px 5px;
+cursor: pointer;
+}
+.button button:hover{
+  background-color: white;
+color: dodgerblue;
+}
+.devpic img {
+  
+    
+    height: 70vh; 
+    margin-left: 10px;
+    margin-right: 90px;
+    margin-bottom: 40px;
+    
+    
+} 
+#check{
+  display: none;
+}
+/* close button */
+.btn_two{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+/* hamburger button */
+.btn_one{
+  position: fixed;
+  color: black;
+  top: 10px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* sidebar */
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: -250px;           /* hidden */
+  width: 250px;
+  height: 100vh;
+  background:grey;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+/* sidebar active */
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+
+
+#check:checked ~.btn_one{
+    display: none;
+}
+

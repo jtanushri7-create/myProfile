@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar {
+    background-color:gray;
+    width: 35vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 20px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 23.5px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.Main {
+    /* background-color: yellow; */
+    width: 80vw;
+}
+
+ .container {
+    display: flex;
+    /* height: 100%; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Cards */
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 240px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+#check{
+  display: none;
+}
+/* close button */
+.btn_two{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+/* hamburger button */
+.btn_one{
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* sidebar */
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: -250px;           /* hidden */
+  width: 250px;
+  height: 100vh;
+  background:grey;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+/* sidebar active */
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+
+
+#check:checked ~.btn_one{
+    display: none;
+}
